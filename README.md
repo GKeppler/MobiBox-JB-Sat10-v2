@@ -1,16 +1,26 @@
-# MobiBox-JB-Sat10-v2
+# MobiBox-JB-Sat10-v2 aka Soundklotz, Soundmops, Soundtrotz, Soundrocks
+generelle Überlegungen: http://www.hifi-forum.de/viewthread-331-139.html#top
 
 ## Amplifier 
+2x TPA3116 
+https://de.aliexpress.com/item/4000099713796.html  
+-cheap
+-bluetooth integrated
 
-2x TPA3116  
-https://de.aliexpress.com/item/4000099713796.html
 
 ## Battery
-5s2p 18650 Lipo's with BMS ca 7Ah
+5s2p 18650 Lipo's with BMS ca. 7Ah
+-high output power
+-light
 
 ## DSP
 [ADAU1701](https://www.analog.com/media/en/technical-documentation/data-sheets/ADAU1701.pdf) DSP Chip  
 [Psychoakustik & Psychoakustik-Effekte](https://curdt.home.hdm-stuttgart.de/PDF/Psychoakustik_und_Psychoakustik_Effekte.pdf)
+
+https://ez.analog.com/dsp/sigmadsp/f/q-a/65081/adau1701-not-programming
+https://suredsp.ratz-it.de/index.php?title=Treiber_installieren
+
+-
 
 ## Chassis & Box 
 [JB-Sat10-v2](https://www.lautsprecherforum.eu/viewtopic.php?t=4907)  
@@ -22,5 +32,30 @@ Faital 10FE200 / Sica z009442 +Q07032B)
 Durchschnittlich 4,5% @ 114dB  
 75x50°
 
+changes:
+-4 Ohm Faital 10FE200 to get more power out of the TPA3116
+-BR-Box to support the Bass
+
+### Chassis 
+-cheap PA-chassis
+-high soundpreassurelevel & efficency
+-light 10" (2.2 kg)
+
+things to think about:
+-10FE200 Q_ts 0.54 not optimal for Bassreflex
+-needs bassboost for Fullrange use -> DSP
+
+search: [loudspeakerdatabase](http://www.loudspeakerdatabase.com/search/type=Subwoofer,Woofer,Mid_Bass,Mid-range,Full-range/8.0_size_in_12.0/1_z_4/100_pw_500/94.0_spl_118.0/9_fs_70/0.13_qts_0.70/sort=-spl)
+### Box
+
+idea: https://youtu.be/EEh01PX-q9I?t=2532
+but flexibel 2k-PU is used ->cheaper than Decidamp
+
+Sandwich poplar plywood-> 4mm plywood, ~1mm PU, 4mm plywood
+->stiff, sounddamping and light
+
+
 ## Simulation
+
+
 
