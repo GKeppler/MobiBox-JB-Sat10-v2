@@ -6,9 +6,7 @@ general Ideas: http://www.hifi-forum.de/viewthread-331-139.html#top
 https://de.aliexpress.com/item/4000099713796.html  
 -cheap
 -bluetooth integrated
--efficent
-
-thi
+-efficient
 
 ## Battery
 5s2p 18650 Lipo's with BMS ca. 7Ah
@@ -17,10 +15,19 @@ thi
 
 ## DSP
 [ADAU1701](https://www.analog.com/media/en/technical-documentation/data-sheets/ADAU1701.pdf) DSP Chip  
-[Psychoakustik & Psychoakustik-Effekte](https://curdt.home.hdm-stuttgart.de/PDF/Psychoakustik_und_Psychoakustik_Effekte.pdf)
 
+### programming:  
+https://www.360customs.de/2015/01/sigmadsp-programmieren-sigma-studio-adau17011401a-eeprom-standalone-self-boot/  
 https://ez.analog.com/dsp/sigmadsp/f/q-a/65081/adau1701-not-programming
 https://suredsp.ratz-it.de/index.php?title=Treiber_installieren
+
+### audio-filters/effects
+[Psychoakustik & Psychoakustik-Effekte](https://curdt.home.hdm-stuttgart.de/PDF/Psychoakustik_und_Psychoakustik_Effekte.pdf)
+https://ez.analog.com/dsp/sigmadsp/f/q-a/65338/dynamic-bass-boost-basics
+https://wiki.analog.com/resources/tools-software/sigmastudio/toolbox/adialgorithms/automaticspeakereq
+https://eclipseaudio.com/fir-filter-guide/
+
+
 
 
 ## Chassis & Box 
@@ -38,23 +45,25 @@ changes:
 - BR-Box to support the Bass
 
 ### Chassis 
+Faital 10FE200  
 - cheap PA-chassis
 - high soundpreassurelevel & efficency
 - light 10" (2.2 kg)
 
 things to think about:  
-- 10FE200 Q_ts 0.54 not optimal for Bassreflex  
+- 10FE200 Q_ts 0.54 not optimal for Bassreflex, but EPB of 105  
 - needs bassboost for Fullrange use -> DSP
 
 search: [loudspeakerdatabase](http://www.loudspeakerdatabase.com/search/type=Subwoofer,Woofer,Mid_Bass,Mid-range,Full-range/8.0_size_in_12.0/1_z_4/100_pw_500/94.0_spl_118.0/9_fs_70/0.13_qts_0.70/sort=-spl)
+
 ### Box
 
-idea: https://youtu.be/EEh01PX-q9I?t=2532  
-but flexibel 2k-PU is used ->cheaper than Decidamp
+idea: https://youtu.be/EEh01PX-q9I?t=2532 but flexibel 2k-PU is used ->cheaper than Decidamp
 
-Sandwich poplar plywood-> 4mm plywood, ~1mm PU, 4mm plywood  
-->stiff, sounddamping and light
-
+Sandwich poplar plywood-> 6mm plywood, ~1mm PU, 3mm plywood  
+- stiff
+- sounddamping
+- light (ca. 3kg)
 
 ## Simulation
 
