@@ -72,7 +72,7 @@ Sandwich poplar plywood-> 6mm plywood, ~1mm PU, 6mm plywood
 - light (ca. 3kg wood for the hole boy)
 
 ## Boxsim Simulation
-![SPL](SPL.jpg)
-![Richtcharakteristik](Richtcharakteristik.jpg)
+![SPL](Simulation/SPL.jpg)
+![Richtcharakteristik](Simulation/Richtcharakteristik.jpg)
 
 
