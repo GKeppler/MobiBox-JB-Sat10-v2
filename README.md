@@ -32,6 +32,7 @@ https://eclipseaudio.com/fir-filter-guide/
 ## PA-box reference [JB-Sat10-v2](https://www.lautsprecherforum.eu/viewtopic.php?t=4907)  
  
 <img src="https://www.lautsprecherforum.eu/images/files/x_id_high_3_1967.jpg" alt="drawing" width="200"/> 
+
 - Faital 10FE200 / Sica z009442 +Q07032B)  
 - 96dB 1W/1m  
 - 118dB (121dB Max / 124dB Peak) 
@@ -40,6 +41,7 @@ https://eclipseaudio.com/fir-filter-guide/
 - 75x50°
 
 changes:  
+
 - 4 Ohm Faital 10FE200 to get more power out of the TPA3116
 - BR-Box for higher bass efficency
 
