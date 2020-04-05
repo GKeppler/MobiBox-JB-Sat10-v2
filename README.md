@@ -31,7 +31,7 @@ https://eclipseaudio.com/fir-filter-guide/
 
 ## Chassis
 [JB-Sat10-v2](https://www.lautsprecherforum.eu/viewtopic.php?t=4907) 
-![JB-Sat10-v2_bild](https://www.lautsprecherforum.eu/images/files/x_id_high_3_1967.jpgg)
+![JB-Sat10-v2_bild](https://www.lautsprecherforum.eu/images/files/x_id_high_3_1967.jpg)
 
  
 - Faital 10FE200 / Sica z009442 +Q07032B)  
