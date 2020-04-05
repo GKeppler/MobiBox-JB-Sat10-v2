@@ -30,7 +30,10 @@ https://eclipseaudio.com/fir-filter-guide/
 
 
 ## Chassis
-[JB-Sat10-v2](https://www.lautsprecherforum.eu/viewtopic.php?t=4907)  
+[JB-Sat10-v2](https://www.lautsprecherforum.eu/viewtopic.php?t=4907) 
+![JB-Sat10-v2_bild](https://www.lautsprecherforum.eu/images/files/x_id_high_3_1967.jpgg)
+
+ 
 - Faital 10FE200 / Sica z009442 +Q07032B)  
 - 96dB 1W/1m  
 - 118dB (121dB Max / 124dB Peak) 
@@ -40,7 +43,7 @@ https://eclipseaudio.com/fir-filter-guide/
 
 changes:  
 - 4 Ohm Faital 10FE200 to get more power out of the TPA3116
-- BR-Box to support the Bass
+- BR-Box for higher bass efficency
 
 ### Faital 10FE200 
   
@@ -53,7 +56,7 @@ things to think about:
 - 10FE200 Q_ts 0.54 not optimal for Bassreflex, but EPB of 105  
 - needs bassboost for Fullrange use -> DSP
 
-search: [loudspeakerdatabase](http://www.loudspeakerdatabase.com/search/type=Subwoofer,Woofer,Mid_Bass,Mid-range,Full-range/8.0_size_in_12.0/1_z_4/100_pw_500/94.0_spl_118.0/9_fs_70/0.13_qts_0.70/sort=-spl)
+alternative bassdrivers: [loudspeakerdatabase](http://www.loudspeakerdatabase.com/search/type=Subwoofer,Woofer,Mid_Bass,Mid-range,Full-range/8.0_size_in_12.0/1_z_4/100_pw_500/94.0_spl_118.0/9_fs_70/0.13_qts_0.70/sort=-spl)
 
 ### Sica z009442 + Q07032B
 
@@ -61,15 +64,15 @@ search: [loudspeakerdatabase](http://www.loudspeakerdatabase.com/search/type=Sub
 - 8 Ohm
 
 ## Box
+idea: https://youtu.be/EEh01PX-q9I?t=2532 but flexibel 2k-PU is used -> cheaper than Decidamp
 
-idea: https://youtu.be/EEh01PX-q9I?t=2532 but flexibel 2k-PU is used ->cheaper than Decidamp
-
-Sandwich poplar plywood-> 6mm plywood, ~1mm PU, 3mm plywood  
+Sandwich poplar plywood-> 6mm plywood, ~1mm PU, 6mm plywood  
 - stiff
 - sounddamping
-- light (ca. 3kg)
+- light (ca. 3kg wood for the hole boy)
 
 ## Boxsim Simulation
-
+![SPL](SPL.jpg)
+![Richtcharakteristik](Richtcharakteristik.jpg)
 
 
