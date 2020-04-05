@@ -17,13 +17,13 @@ https://de.aliexpress.com/item/4000099713796.html
 
 ## DSP [ADAU1701](https://www.analog.com/media/en/technical-documentation/data-sheets/ADAU1701.pdf)
 
-programming:  
+### programming:  
 
 https://www.360customs.de/2015/01/sigmadsp-programmieren-sigma-studio-adau17011401a-eeprom-standalone-self-boot/  
 https://ez.analog.com/dsp/sigmadsp/f/q-a/65081/adau1701-not-programming
 https://suredsp.ratz-it.de/index.php?title=Treiber_installieren
 
-audio-filters/effects:
+### audio-filters/effects:
 
 [Psychoakustik & Psychoakustik-Effekte](https://curdt.home.hdm-stuttgart.de/PDF/Psychoakustik_und_Psychoakustik_Effekte.pdf)
 https://ez.analog.com/dsp/sigmadsp/f/q-a/65338/dynamic-bass-boost-basics
