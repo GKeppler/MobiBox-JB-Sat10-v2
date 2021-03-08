@@ -2,6 +2,10 @@
 
 general Ideas: http://www.hifi-forum.de/viewthread-331-139.html#top
 
+
+## current problems
+- noise due to amplifier board in combination with high efficency speakers: [klick](https://www.lautsprecherforum.eu/viewtopic.php?t=6531)
+
 ## Amplifier 
 
 2x TPA3116 
@@ -11,13 +15,19 @@ https://de.aliexpress.com/item/4000099713796.html
 
 ## Battery
 
-5s2p 18650 Lipo's with BMS ca. 7Ah
+I use Lipo battery packs from ALDI as they are cheap and light weight 
+
+<img src="https://s7g10.scene7.com/is/image/aldi/202009080257?$H10-XL$" alt="drawing" width="200"/> 
+
+- ca. 90wh
 - high output power
 - light
 
 ## DSP [ADAU1701](https://www.analog.com/media/en/technical-documentation/data-sheets/ADAU1701.pdf)
 
-### programming:  
+### programming:
+
+The [Sure DSP Ratz IT Forum](https://suredsp.ratz-it.de/) provides all information for programming the DSP
 
 https://www.360customs.de/2015/01/sigmadsp-programmieren-sigma-studio-adau17011401a-eeprom-standalone-self-boot/  
 https://ez.analog.com/dsp/sigmadsp/f/q-a/65081/adau1701-not-programming
