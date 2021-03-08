@@ -4,14 +4,26 @@ general Ideas: http://www.hifi-forum.de/viewthread-331-139.html#top
 
 
 ## current problems
-- noise due to amplifier board in combination with high efficency speakers: [klick](https://www.lautsprecherforum.eu/viewtopic.php?t=6531)
+noise due to:
+- amplifier board in combination with high efficency speakers: [klick](https://www.lautsprecherforum.eu/viewtopic.php?t=6531)
+- or low switching frequency of regulator for ADAU1701 board 
+- **the DACs of the sure board are bad** [klick](https://stromrichter.org/showthread.php?tid=4238) 
 
+possible solution: 
+- use different DACs: [klick](https://www.google.com/search?client=firefox-b-d&q=PCM5102)
+- add dc block to output [klick](https://ez.analog.com/dsp/sigmadsp/f/q-a/65144/adau1701-noise-tone-issues) "start with something higher like 7FF. That should move the idle tones up out of band."
+- higher switching frequency -> test with lab power supply
+- dont power the ADAU1701 and check noise
+
+other possible solutions:
+- [klick](https://www.diyaudio.com/forums/digital-line-level/294423-electronics-adau1701-module-12.html#post5033060)
 ## Amplifier 
 
-2x TPA3116 
-https://de.aliexpress.com/item/4000099713796.html  
--cheap
--bluetooth integrated
+2.1 TPA3116 board
+" Also, there's lots of 2.1 amps (chips synchronized) where you can circumvent the on board sub LP filter "
+## bluetooth
+
+maybe the [csr8645](http://www.360customs.de/2017/01/csr8645-bluetooth-4-0-apt-x-mp3-aac-faststream-breakout-board/)
 
 ## Battery
 
@@ -24,6 +36,9 @@ I use Lipo battery packs from ALDI as they are cheap and light weight
 - light
 
 ## DSP [ADAU1701](https://www.analog.com/media/en/technical-documentation/data-sheets/ADAU1701.pdf)
+
+I dont use the RCA interface from sure, but solder the audio input output myself:
+[
 
 ### programming:
 
