@@ -19,11 +19,13 @@ other possible solutions:
 - [klick](https://www.diyaudio.com/forums/digital-line-level/294423-electronics-adau1701-module-12.html#post5033060)
 ## Amplifier 
 
+**just buy [this one](https://www.boomaudio.de/wondom-tpa250-dsp-bluetooth-endstufe) next time as it has bleutooth and the dsp integrated** 
+
 2.1 TPA3116d2 board
 " Also, there's lots of 2.1 amps (chips synchronized) where you can circumvent the on board sub LP filter "
 
 set treble frequency of 2.1 board to about 1/3 for cleanest sound according to this guy: [klick](https://www.youtube.com/watch?v=ZhzOAAmGvBg)
-
+also highpass switch to off -> facing away from the dials
 ## bluetooth
 
 maybe the [csr8645](http://www.360customs.de/2017/01/csr8645-bluetooth-4-0-apt-x-mp3-aac-faststream-breakout-board/)
