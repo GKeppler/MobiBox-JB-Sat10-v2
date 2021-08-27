@@ -7,9 +7,10 @@ general Ideas: http://www.hifi-forum.de/viewthread-331-139.html#top
 noise due to:
 - amplifier board in combination with high efficency speakers: [klick](https://www.lautsprecherforum.eu/viewtopic.php?t=6531)
 - or low switching frequency of regulator for ADAU1701 board 
-- **the DACs of the sure board are bad** [klick](https://stromrichter.org/showthread.php?tid=4238) 
+- **the DACs of the sure board could be the problem** [klick](https://stromrichter.org/showthread.php?tid=4238) 
 
 possible solution: 
+- **upgrade to new WONDOM JAB 5 Board**
 - use different DACs: [klick](https://www.google.com/search?client=firefox-b-d&q=PCM5102)
 - add dc block to output [klick](https://ez.analog.com/dsp/sigmadsp/f/q-a/65144/adau1701-noise-tone-issues) "start with something higher like 7FF. That should move the idle tones up out of band."
 - higher switching frequency -> test with lab power supply
@@ -19,7 +20,7 @@ other possible solutions:
 - [klick](https://www.diyaudio.com/forums/digital-line-level/294423-electronics-adau1701-module-12.html#post5033060)
 ## Amplifier 
 
-**just buy [this one](https://www.boomaudio.de/wondom-tpa250-dsp-bluetooth-endstufe) next time as it has bleutooth and the dsp integrated** 
+**just buy the [WONDOM JAB5](https://store.sure-electronics.com/product/AA-JA33286) next time as it has bleutooth and the dsp integrated** 
 
 2.1 TPA3116d2 board
 " Also, there's lots of 2.1 amps (chips synchronized) where you can circumvent the on board sub LP filter "
