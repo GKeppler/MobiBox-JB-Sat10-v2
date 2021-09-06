@@ -1,68 +1,10 @@
-# MobiBox-JB-Sat10-v2 aka Soundklotz, Soundmops, Soundtrotz, Soundrocks
+# Soundklotz
+Cheap bettery powered PA equipment. One Sattelite([JB-Sat10-v2](https://www.lautsprecherforum.eu/viewtopic.php?t=4907)) speaker and one Sub(PS-Bass V2) using 40V Li-Ion batteries from Elektric-Drills.
 
-general Ideas: http://www.hifi-forum.de/viewthread-331-139.html#top
+Can be used as portable Bluetooth Box with Sattelite standalone, or with the additional sub for some serious bass.
 
 
-## current problems
-noise due to:
-- amplifier board in combination with high efficency speakers: [klick](https://www.lautsprecherforum.eu/viewtopic.php?t=6531)
-- or low switching frequency of regulator for ADAU1701 board 
-- **the DACs of the sure board could be the problem** [klick](https://stromrichter.org/showthread.php?tid=4238) 
-
-possible solution: 
-- **upgrade to new WONDOM JAB 5 Board**
-- use different DACs: [klick](https://www.google.com/search?client=firefox-b-d&q=PCM5102)
-- add dc block to output [klick](https://ez.analog.com/dsp/sigmadsp/f/q-a/65144/adau1701-noise-tone-issues) "start with something higher like 7FF. That should move the idle tones up out of band."
-- higher switching frequency -> test with lab power supply
-- dont power the ADAU1701 and check noise
-
-other possible solutions:
-- [klick](https://www.diyaudio.com/forums/digital-line-level/294423-electronics-adau1701-module-12.html#post5033060)
-## Amplifier 
-
-**just buy the [WONDOM JAB5](https://store.sure-electronics.com/product/AA-JA33286) next time as it has bleutooth and the dsp integrated** 
-
-2.1 TPA3116d2 board
-" Also, there's lots of 2.1 amps (chips synchronized) where you can circumvent the on board sub LP filter "
-
-set treble frequency of 2.1 board to about 1/3 for cleanest sound according to this guy: [klick](https://www.youtube.com/watch?v=ZhzOAAmGvBg)
-also highpass switch to off -> facing away from the dials
-## bluetooth
-
-maybe the [csr8645](http://www.360customs.de/2017/01/csr8645-bluetooth-4-0-apt-x-mp3-aac-faststream-breakout-board/)
-
-## Battery
-
-I use Lipo battery packs from ALDI as they are cheap and light weight 
-
-<img src="https://s7g10.scene7.com/is/image/aldi/202009080257?$H10-XL$" alt="drawing" width="200"/> 
-
-- ca. 90wh
-- high output power
-- light
-
-## DSP [ADAU1701](https://www.analog.com/media/en/technical-documentation/data-sheets/ADAU1701.pdf)
-
-I dont use the RCA interface from sure, but solder the audio input output myself:
-[
-
-### programming:
-
-The [Sure DSP Ratz IT Forum](https://suredsp.ratz-it.de/) provides all information for programming the DSP
-
-https://www.360customs.de/2015/01/sigmadsp-programmieren-sigma-studio-adau17011401a-eeprom-standalone-self-boot/  
-https://ez.analog.com/dsp/sigmadsp/f/q-a/65081/adau1701-not-programming
-https://suredsp.ratz-it.de/index.php?title=Treiber_installieren
-
-### audio-filters/effects:
-
-[Psychoakustik & Psychoakustik-Effekte](https://curdt.home.hdm-stuttgart.de/PDF/Psychoakustik_und_Psychoakustik_Effekte.pdf)
-https://ez.analog.com/dsp/sigmadsp/f/q-a/65338/dynamic-bass-boost-basics
-https://wiki.analog.com/resources/tools-software/sigmastudio/toolbox/adialgorithms/automaticspeakereq
-https://eclipseaudio.com/fir-filter-guide/
-
-## PA-box reference [JB-Sat10-v2](https://www.lautsprecherforum.eu/viewtopic.php?t=4907)  
- 
+## [JB-Sat10-v2](https://www.lautsprecherforum.eu/viewtopic.php?t=4907)  
 <img src="https://www.lautsprecherforum.eu/images/files/x_id_high_3_1967.jpg" alt="drawing" width="200"/> 
 
 - Faital 10FE200 / Sica z009442 +Q07032B)  
@@ -74,7 +16,7 @@ https://eclipseaudio.com/fir-filter-guide/
 
 changes:  
 
-- 4 Ohm Faital 10FE200 to get more power out of the TPA3116
+- 4 Ohm Faital 10FE200
 - BR-Box for higher bass efficency
 
 ### Faital 10FE200 
@@ -95,6 +37,41 @@ alternative bassdrivers: [loudspeakerdatabase](http://www.loudspeakerdatabase.co
 - 1" plastic tweeter horn
 - 8 Ohm
 
+## [PS-Bass V2](https://aw-audio.de/boxenbauplaene/PS-Bass%20MK2_.pdf)
+
+- High efficiency
+- still kinda portable
+
+
+## Battery
+
+I use Lipo battery packs from ALDI as they are cheap and light weight 
+
+<img src="https://s7g10.scene7.com/is/image/aldi/202009080257?$H10-XL$" alt="drawing" width="200"/> 
+
+- ca. 90wh
+- high output power
+- light
+
+## Amplifier: [Wondom JAB5](https://store.sure-electronics.com/images/documents/4%20x%20100Watt%20Class%20D%20Audio%20Amplifier%20Board%20Integrated%20with%20DSP%20&%20BT%205.0%20-%20JAB5%20Datasheet.pdf)
+
+- 2x TDA7498E: 2.1 mode (2 x 100W + 1 x 200W)
+- Bluetooth APT-X HD
+- DSP AUDAU1701
+
+### DSP: [ADAU1701](https://www.analog.com/media/en/technical-documentation/data-sheets/ADAU1701.pdf)
+
+The [Sure DSP Ratz IT Forum](https://suredsp.ratz-it.de/) provides all information for programming the DSP
+
+- [Driver installation](https://suredsp.ratz-it.de/index.php?title=Treiber_installieren)
+- [Programming](https://www.360customs.de/2015/01/sigmadsp-programmieren-sigma-studio-adau17011401a-eeprom-standalone-self-boot/ ) 
+
+audio-filters/effects:
+
+- [Psychoakustik & Psychoakustik-Effekte](https://curdt.home.hdm-stuttgart.de/PDF/Psychoakustik_und_Psychoakustik_Effekte.pdf)
+- [dynamic-bass-boost-basics](https://ez.analog.com/dsp/sigmadsp/f/q-a/65338/dynamic-bass-boost-basics)
+- [automaticspeakereq](https://wiki.analog.com/resources/tools-software/sigmastudio/toolbox/adialgorithms/automaticspeakereq)
+- [fir filter guide](https://eclipseaudio.com/fir-filter-guide/)
 ## Box
 
 idea: https://youtu.be/EEh01PX-q9I?t=2532 but flexibel 2k-PU is used -> cheaper than Decidamp
@@ -108,5 +85,3 @@ Sandwich poplar plywood-> 6mm plywood, ~1mm PU, 6mm plywood
 
 ![SPL](Simulation/SPL.jpg)
 ![Richtcharakteristik](Simulation/Richtcharakteristik.jpg)
-
-
