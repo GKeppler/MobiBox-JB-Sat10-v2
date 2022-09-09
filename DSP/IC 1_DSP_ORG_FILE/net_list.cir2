@@ -1,0 +1,24 @@
+0 ICSigma100In1 O_C52_A0_P1_out Link22 O_C52_A0_P2_out Link23
+1 RegReadAlgADCIn1 O_C70_A0_P1_out Link9
+2 RegReadAlgADCIn2 O_C83_A0_P1_out Link6
+3 RegReadAlgADCIn3 O_C89_A0_P1_out Link1
+4 DCInpAlg1 O_C101_A0_P1_out Link17
+5 RegReadAlgADCIn4 O_C109_A0_P1_out Link18
+6 MultAlg1 I_C97_A0_P1_in Link18 I_C97_A0_P2_in Link17 O_C97_A0_P3_out Link21
+7 ParamToneIndexwStepAlgFix1 I_C91_A0_P1_in Link21 I_C91_A0_P2_in Link22 I_C91_A0_P4_in Link23 O_C91_A0_P3_out Link3 O_C91_A0_P5_out Link7
+8 ParamToneIndexwStepAlgFix3 I_C114_A0_P1_in Link21 I_C114_A0_P2_in Link22 I_C114_A0_P4_in Link23 O_C114_A0_P3_out Link16 O_C114_A0_P5_out Link19
+9 ParamToneIndexwStepAlgFix2 I_C103_A0_P1_in Link21 I_C103_A0_P2_in Link3 I_C103_A0_P4_in Link7 O_C103_A0_P3_out Link11 O_C103_A0_P5_out Link14
+10 TwoChanXMixer1940Alg2 I_C120_A0_P1_in Link16 I_C120_A0_P2_in Link19 O_C120_A0_P3_out Link0
+11 ExtSWGainDB3 I_C85_A0_P1_in Link1 I_C85_A0_P2_in Link0 O_C85_A0_P3_out Link15
+12 TwoChanXMixer1940Alg3 I_C124_A0_P1_in Link11 I_C124_A0_P2_in Link14 O_C124_A0_P3_out Link4
+13 ExtSWGainDB2 I_C79_A0_P1_in Link6 I_C79_A0_P2_in Link4 O_C79_A0_P3_out Link12
+14 TwoChanXMixer1940Alg1 I_C75_A0_P1_in Link15 I_C75_A0_P2_in Link12 O_C75_A0_P3_out Link5
+15 ExtSWGainDB1 I_C66_A0_P1_in Link9 I_C66_A0_P2_in Link5 O_C66_A0_P3_out Link20
+16 Gain1940AlgNS4 I_C43_A3_P1_in Link20 O_C43_A3_P2_out Link13
+17 Gain1940AlgNS1 I_C43_A0_P1_in Link20 O_C43_A0_P2_out Link10
+18 Gain1940AlgNS2 I_C43_A1_P1_in Link20 O_C43_A1_P2_out Link2
+19 Gain1940AlgNS3 I_C43_A2_P1_in Link20 O_C43_A2_P2_out Link8
+20 ICSigma100Out2 I_C37_A0_P1_in Link2
+21 ICSigma100Out4 I_C41_A0_P1_in Link8
+22 ICSigma100Out1 I_C35_A0_P1_in Link10
+23 ICSigma100Out3 I_C39_A0_P1_in Link13

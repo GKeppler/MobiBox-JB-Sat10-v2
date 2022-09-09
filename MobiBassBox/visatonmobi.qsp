@@ -1,0 +1,18 @@
+<!DOCTYPE QSpeakersProject>
+<project>
+ <speaker model="W 200 S - 4 Ohm" qts="0.35" qms="3.99" dia="0.165" z="4" vas="65" fs="29" le="1.5" qes="0.38" vendor="VISATON" re="3.4" sd="0.0214" bl="7.7" xmax="3.5" spl="88" pe="115"/>
+ <box type="sealed" volume="0.01"/>
+ <box type="ported" res="1">
+  <box type="sealed" volume="0.01"/>
+  <port len="0" num="1" diam="0" width="0"/>
+ </box>
+ <box type="bandpass">
+  <box type="sealed" volume="0.1"/>
+  <box type="ported" res="1">
+   <box type="sealed" volume="0.01"/>
+   <port len="0" num="1" diam="0" width="2.2233e-322"/>
+  </box>
+ </box>
+ <layout sibling="1"/>
+ <state tab="0"/>
+</project>
