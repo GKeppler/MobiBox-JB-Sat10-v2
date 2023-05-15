@@ -1,70 +1,41 @@
 # MobiBox-JB-Sat10-v2 aka Soundklotz, Soundmops, Soundtrotz, Soundrocks
 
-general Ideas: http://www.hifi-forum.de/viewthread-331-139.html#top
+Welcome to the beautiful README of MobiBox-JB-Sat10-v2, also known as Soundklotz, Soundmops, Soundtrotz, Soundrocks. It is a affortable DIY battery powered bluetooth speaker.
+This document will guide you through the various components and features of this project.
+General Ideas: http://www.hifi-forum.de/viewthread-331-139.html#top
 
-## Amplifier 
+## Quick overview
+- cheap and efficinet DIY PA-Loudspeaker
+- Amplifier & DSP: Wondom TDA4100 DSP BT Endstufe JAB5
+- 
 
-2x TPA3116 
-https://de.aliexpress.com/item/4000099713796.html  
--cheap
--bluetooth integrated
+## Amplifier & DSP
 
-## Battery
+The amplifier section consists of a **Wondom TDA4100 DSP BT Endstufe JAB5**, which can be purchased from this link. This module is not only affordable but also has integrated Bluetooth and DSP functionality.
 
-5s2p 18650 Lipo's with BMS ca. 7Ah
-- high output power
-- light
+### Programming of the [ADAU1701 DSP](https://www.analog.com/media/en/technical-documentation/data-sheets/ADAU1701.pdf)
 
-## DSP [ADAU1701](https://www.analog.com/media/en/technical-documentation/data-sheets/ADAU1701.pdf)
-- phone app called "Advanced Spectrum Analyzer" for tuning
+The software-project in the **DSP** folder can be used to programm the board without changes.
+The DSP is programmed using the SigmaStudio software. The software can be downloaded from the [Analog Devices website](https://www.analog.com/en/design-center/processors-and-dsp/evaluation-and-development-software/ss_sigst_02.html#dsp-overview).  The program can be loaded onto the DSP using the USBi interface. The USBi interface is connected to the DSP board via the 4-pin connector. More info on this [website](https://suredsp.ratz-it.de/index.php?title=Treiber_installieren).
 
-write:  ./eeprog -f -16  -i epr.hex  -w 0x00 -t 5 /dev/i2c-1 0x50
-read:   ./eeprog -xf /dev/i2c-1 0x50 -16 -r 0x00:0x100
-read2:   i2cdump -y 1 0x50 i
-
-Die normalen, analogen Ausgänge sind intern nur als DAC0, DAC1, etc. benannt. Auf dem Sure DSP sind diese wie folgt beschriftet: DAC0-OutR1, DAC1-OutL1, DAC2-OutR2, DAC3-OutL2. 
-
-OutR2 -> DAC2
-OutR1 -> DAC0
-
-Pinout sure dsp: https://suredsp.ratz-it.de/images/e/ee/Pinbelegung_SureDSP_neu.png
-programmieren 2:
-https://www.richud.com/wiki/Rasberry_Pi_I2C_EEPROM_Program
-https://github.com/tat/eeprog/blob/master/eeprog.c
-
-
-ADC0 & ADC1 18 kOhm & 47 μF capacitor audio input: 
-The external resistor connected to ADC_RES sets the full-scale
-current input of the ADCs. The full range of the ADC inputs is
-100 µA rms with an external 18 kΩ resistor on ADC_RES (20 kΩ
-total, because it is in series with the internal 2 kΩ). The only
-reason to change the ADC_RES resistor is if a sampling rate
-other than 48 kHz is used.
-For these three resistors, a 1% tolerance is
-recommended.
-
-. The 47 μF capacitors are
-used to ac-couple the signals so that the inputs are biased at 1.5 V
-
-DAC0 - ADC3 560 Ohm & 47 μF ac-couple-capacitor & 5,6nF low pass(50 kHz -3dB) audio output:
-
-### programming:  
-
-https://www.360customs.de/2015/01/sigmadsp-programmieren-sigma-studio-adau17011401a-eeprom-standalone-self-boot/  
-https://ez.analog.com/dsp/sigmadsp/f/q-a/65081/adau1701-not-programming
-https://suredsp.ratz-it.de/index.php?title=Treiber_installieren
 
 programm using raspberry pi and [this](https://www.richud.com/wiki/Rasberry_Pi_I2C_EEPROM_Program) guide
-1.check: sudo i2cdetect -y 1     ->e.g 0x50
+1.check: sudo i2cdetect -y 1   
 2.read: i2cdump -y 0 0x50 i 
 3.write: ./eeprog -f -8 -i hex.file -w 0x00 -t 5 /dev/i2c-1 0x50
 
-### audio-filters/effects:
 
-[Psychoakustik & Psychoakustik-Effekte](https://curdt.home.hdm-stuttgart.de/PDF/Psychoakustik_und_Psychoakustik_Effekte.pdf)
-https://ez.analog.com/dsp/sigmadsp/f/q-a/65338/dynamic-bass-boost-basics
-https://wiki.analog.com/resources/tools-software/sigmastudio/toolbox/adialgorithms/automaticspeakereq
-https://eclipseaudio.com/fir-filter-guide/
+### Audio-filters/effects
+Some interesting links for audio-filters/effects:
+
+- [Psychoakustik & Psychoakustik-Effekte](https://curdt.home.hdm-stuttgart.de/PDF/Psychoakustik_und_Psychoakustik_Effekte.pdf)
+- [dynamic-bass-boost-basics]https://ez.analog.com/dsp/sigmadsp/f/q-a/65338/dynamic-bass-boost-basics)
+
+## Battery
+
+ACTIV Energy Li-Ion Akku 20/40V 5,0Ah / 2,5Ah 90Wh are used. Those are normaly used to power garden tools. They are cheap and have a high capacity. The files in the **Design** Folder can be used to 3D print a case for the battery. 
+![Battery](images\activ_energy_battery.jpg)
+
 
 ## PA-box reference [JB-Sat10-v2](https://www.lautsprecherforum.eu/viewtopic.php?t=4907)  
  
@@ -100,9 +71,9 @@ alternative bassdrivers: [loudspeakerdatabase](http://www.loudspeakerdatabase.co
 - 1" PA tweeter horn
 - 8 Ohm
 
-## Box
+## Case
 
-### dimensions
+### Dimensions
 - 32*30*42cm outside messure  
 - sandwich poplar plywood structure-> 6mm plywood, ~0.2mm PU, 6mm plywood  
 	- idea: https://youtu.be/EEh01PX-q9I?t=2532 but flexibel 2k-PU is used -> cheaper than Decidamp
