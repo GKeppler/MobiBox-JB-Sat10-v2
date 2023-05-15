@@ -34,7 +34,7 @@ Some interesting links for audio-filters/effects:
 ## Battery
 
 ACTIV Energy Li-Ion Akku 20/40V 5,0Ah / 2,5Ah 90Wh are used. Those are normaly used to power garden tools. They are cheap and have a high capacity. The files in the **Design** Folder can be used to 3D print a case for the battery. 
-![Battery](images\activ_energy_battery.jpg)
+![Battery](images/activ_energy_battery.jpg)
 
 
 ## PA-box reference [JB-Sat10-v2](https://www.lautsprecherforum.eu/viewtopic.php?t=4907)  
