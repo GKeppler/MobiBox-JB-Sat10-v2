@@ -5,9 +5,9 @@ This document will guide you through the various components and features of this
 General Ideas: http://www.hifi-forum.de/viewthread-331-139.html#top
 
 ## Quick overview
-- cheap and efficinet DIY PA-Loudspeaker
+- Cheap and efficient DIY PA-Loudspeaker
 - Amplifier & DSP: Wondom TDA4100 DSP BT Endstufe JAB5
-- 
+- Powertool battery: ACTIV Energy Li-Ion Akku 20/40V 5,0Ah / 2,5Ah 90Wh
 
 ## Amplifier & DSP
 
